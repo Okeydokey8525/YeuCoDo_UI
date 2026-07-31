@@ -150,3 +150,32 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   }
 }
 
+
+/* A4 — News section placement and CTA */
+.yc-section-cta {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.yc-button {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  font-family: var(--yc-font-family);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: var(--yc-radius-md);
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: var(--yc-shadow-card);
+  border: 1px solid var(--yc-color-primary);
+}
+
+.yc-button:hover,
+.yc-button:focus {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
