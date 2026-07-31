@@ -1,0 +1,85 @@
+/* custom-homepage.css - YEUCODO Typography Foundation */
+:root {
+  --yc-font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --yc-color-primary: #FF8D00;
+  --yc-color-heading: #222222;
+  --yc-color-body: #444444;
+  --yc-color-muted: #666666;
+  --yc-color-surface: #ffffff;
+  --yc-color-border: #e0e0e0;
+  --yc-radius-sm: 4px;
+  --yc-radius-md: 6px;
+  --yc-shadow-card: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+body, html {
+  font-family: var(--yc-font-family) !important;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--yc-color-body);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.elementor-heading-title, 
+.entry-title {
+  font-family: var(--yc-font-family) !important;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--yc-color-heading);
+  text-transform: none !important;
+}
+
+/* Paragraphs */
+p, .elementor-text-editor, .woocommerce-product-details__short-description {
+  line-height: 1.65;
+  color: var(--yc-color-body);
+}
+
+/* Buttons */
+a.button, button, .button, input[type="button"], input[type="submit"], .elementor-button {
+  font-family: var(--yc-font-family) !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  border-radius: var(--yc-radius-md) !important;
+  background-color: var(--yc-color-primary) !important;
+  border-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  transition: opacity 0.3s ease !important;
+}
+
+a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:hover, .elementor-button:hover {
+  opacity: 0.85 !important;
+  background-color: var(--yc-color-primary) !important;
+  border-color: var(--yc-color-primary) !important;
+}
+
+/* Menu */
+.menu-item a, .ts-menu a, .menu-item-has-children > a {
+  font-family: var(--yc-font-family) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+/* Section Headings */
+.elementor-heading-title.elementor-size-default, .section-title {
+  font-size: 30px !important;
+  line-height: 1.3 !important;
+  margin-bottom: 24px !important;
+}
+
+/* Card / Product Titles */
+.woocommerce-loop-product__title, .product-title, .elementor-post__title, .entry-title a {
+  font-family: var(--yc-font-family) !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+/* Metadata */
+.price, .date, .meta, .elementor-post__meta-data, .price del, .woocommerce-Price-amount {
+  font-size: 13px !important;
+  color: var(--yc-color-muted);
+}
