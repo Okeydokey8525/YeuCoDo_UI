@@ -83,3 +83,66 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   font-size: 13px !important;
   color: var(--yc-color-muted);
 }
+
+/* A2 — Desktop navigation and dropdown */
+@media screen and (min-width: 992px) {
+  .pc-menu ul#menu-main-menu {
+    display: flex !important;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .pc-menu ul#menu-main-menu > li.menu-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .pc-menu ul#menu-main-menu > li.menu-item > a {
+    text-transform: none !important;
+  }
+
+  .pc-menu ul#menu-main-menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background: #ffffff;
+    border: 1px solid var(--yc-color-border);
+    border-radius: 8px;
+    box-shadow: var(--yc-shadow-card);
+    padding: 8px 0;
+    z-index: 999999 !important;
+    
+    /* hide by default */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.2s ease-in-out;
+    display: block !important;
+  }
+  
+  .pc-menu ul#menu-main-menu > li.menu-item:hover > .sub-menu,
+  .pc-menu ul#menu-main-menu > li.menu-item:focus-within > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .pc-menu ul#menu-main-menu .sub-menu li.menu-item a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 16px;
+    color: var(--yc-color-heading) !important;
+    text-transform: none !important;
+    background: transparent;
+  }
+
+  .pc-menu ul#menu-main-menu .sub-menu li.menu-item a:hover,
+  .pc-menu ul#menu-main-menu .sub-menu li.menu-item a:focus {
+    background: #fff4e6 !important; 
+    color: var(--yc-color-primary) !important;
+  }
+}
