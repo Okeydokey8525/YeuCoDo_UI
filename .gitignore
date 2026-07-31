@@ -1,0 +1,26 @@
+﻿# HTTrack original
+00_original_httrack/
+
+# HTTrack cache and logs
+**/hts-cache/
+**/hts-log.txt
+*.whtt
+
+# External mirrored domains not required for UI work
+**/static.vecteezy.com/
+**/static.xx.fbcdn.net/
+**/www.google.com/
+**/stackpath.bootstrapcdn.com/
+**/beyono.vn/
+**/cdn.cellphones.com.vn/
+
+# IDE and system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
