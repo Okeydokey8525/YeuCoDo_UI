@@ -1,4 +1,4 @@
-/* custom-homepage.css - YEUCODO Typography Foundation */
+﻿/* custom-homepage.css - YEUCODO Typography Foundation */
 :root {
   --yc-font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --yc-color-primary: #FF8D00;
@@ -84,7 +84,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   color: var(--yc-color-muted);
 }
 
-/* A2 � Desktop navigation and dropdown */
+/* A2 — Desktop navigation and dropdown */
 @media screen and (min-width: 992px) {
   .pc-menu ul#menu-main-menu {
     display: flex !important;
@@ -111,14 +111,17 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     border-radius: 8px;
     box-shadow: var(--yc-shadow-card);
     padding: 8px 0;
-    z-index: 999999 !important;
+    z-index: 9999;
     
     /* hide by default */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateY(10px);
-    transition: all 0.2s ease-in-out;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease,
+      transform 0.2s ease;
     display: block !important;
   }
   
@@ -146,3 +149,4 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     color: var(--yc-color-primary) !important;
   }
 }
+
