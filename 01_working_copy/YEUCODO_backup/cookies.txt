@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.yeucodo.vn	TRUE	/	FALSE	1999999999	PHPSESSID	93lf6l94qcadd9a82d8h48ko9a
+static.vecteezy.com	TRUE	/	FALSE	1999999999	__cf_bm	egdofh6hAv1sYux1IiKpkwmMRWFTAS150dwttDLUTBk-1785408646.2550433-1.0.1.1-TvRwYod6z20IClUOwcRVvLImaWKeFLhO5aYq39WJOxHuwaNNu9ddf8q_iEkXadXxza4z7WpIBsT5T2y.8gyO0JI1EvsrVLbwmlEUtOO8D8jaO2783T_zCQMSLSjdX474
+vecteezy.com	TRUE	/	FALSE	1999999999	SameSite	None
+beyono.vn	TRUE	/	FALSE	1999999999	.AspNetCore.Antiforgery.ccvi9UHx_2Y	CfDJ8Iwaualev0xIsueOPcuPm13wDRwOMsUgloMgFKV7_gKCxOGA0X1Ci9crxYA0rQF0o8ow1xP-AQYCclIUiYymaWqZ-C94BDnAsVJ4t8mihmjpm-Og6AVljcHbuPZORLyJ3y24HtB9XwH6JfNeVU_lgl4
+beyono.vn	TRUE	/	FALSE	1999999999	samesite	lax
+

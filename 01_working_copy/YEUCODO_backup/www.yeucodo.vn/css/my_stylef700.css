@@ -1,0 +1,469 @@
+@font-face {
+	font-family:Aquawax-Regular;
+	src:url("https://yeucodo.vn/page-not-found.html");
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;	
+    font-size: 16px;	
+}
+span {
+	font-family: inherit !important;
+}
+a {
+    color: #35302a;
+    text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+ol, ul {
+    margin-bottom: 10px !important;
+}
+p {
+    margin: 0 0 10px;
+}
+a:hover {
+	text-decoration:none!important;
+}
+.hide {
+	display: none;
+}
+.main-content ol, .main-content ul {
+	padding-left:20px !important;
+}
+.main-content ol li {
+	padding-left:10px;
+	list-style:decimal;
+}
+.base_color {
+	color: #000;
+}
+.font-bold {
+	font-weight: bold;
+}
+.w100 {
+	width: 100%;
+}
+.mg0 {
+	margin: 0 !important;
+}
+.mgl0 {
+	margin-left: 0!important;
+}
+.mgr0 {
+    margin-right: 0!important;
+}
+.mgt0 {
+    margin-top: 0!important;
+}
+.mgb0 {
+    margin-bottom: 0!important;
+}
+.pd0 {
+	padding: 0 !important;
+}
+.pdl0 {
+	padding-left: 0 !important;
+}
+.pdr0 {
+    padding-right: 0 !important;
+}
+.mt-30 {margin-top: 30px;}
+.mb-30 {margin-bottom: 30px;}
+.mt-50 {margin-top: 50px;}
+.mt-60 {margin-top: 60px;}
+.h30 {height:30px;}
+.uppercase {
+	text-transform: uppercase;
+}
+.mobile {
+	display: none;
+}
+.text-center {
+	text-align: center;
+}
+.cb:after {
+	clear: both;
+	content: '';
+    display: block;
+}
+
+.ts-store-notice {
+    display: none;
+}
+.ts-product-attribute > div.option:not(.color).active > a {
+    background: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+.woocommerce div.product div.images .flex-control-thumbs li {
+    width: 20%;
+}
+.elementor-4752 .elementor-element.elementor-element-fe59b76 .ha-posts-carousel {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border-radius:5px;
+    transition-duration: 250ms;
+}
+.elementor-4752 .elementor-element.elementor-element-fe59b76 .ha-posts-carousel:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ts-header nav > ul.menu li ul.sub-menu, .ts-header nav > ul.menu li ul.sub-menu:before, .ts-header nav > ul.menu li ul.sub-menu:after {
+	background: #FF8D00;
+	padding: 0;
+}
+.ts-header nav > ul.menu li ul.sub-menu {
+    width: 275px;
+}
+nav.main-menu ul.menu .sub-menu > li {
+    padding: 0 !important;
+}
+.elementor-4752 .elementor-element.elementor-element-02b0ab0 .elementor-heading-title, .elementor-4752 .elementor-element.elementor-element-ea9c9db p {
+    color: #fff;
+}
+.section-news .elementor-container {
+	max-width: 1360px !important;
+}
+.section-news .slick-slide img {
+    height: 280px;
+}
+.section-news .ha-posts-carousel__content-position {
+    padding: 0;
+}
+.section-news .ha-posts-carousel__title {
+    height: 80px;
+    overflow: hidden;	
+    padding:10px;
+}
+.section-news .ha-posts-carousel__title a {
+    color: #333 !important;
+    font-weight: bold !important;
+	text-decoration:none !important;
+}
+.section-news .ha-posts-carousel__content-text {
+    padding:10px;
+}
+.section-news .elementor-heading-title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+	color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF6E00 0px 0px 20px, #FF6E00 0px 0px 30px, #FF6E00 0px 0px 40px, #FF6E00 0px 0px 50px, #FF6E00 0px 0px 75px;
+}
+.elementor-4752 .elementor-element.elementor-element-0e10661 > .elementor-element-populated {
+    padding: 35% 0% 20% 0%;
+}
+header .logo img {
+    height: 100px;
+    width: auto;
+	padding: 10px 0;
+}
+.ts-header nav > ul.menu li ul.sub-menu ul.sub-menu {
+    width: 250px;
+    padding: 5px;
+}
+.ts-header nav > ul.menu li ul.sub-menu > li:first-child > ul.sub-menu {
+    top: 0;
+}
+.ts-header nav > ul.menu li ul.sub-menu:before {
+    box-shadow: none;
+}
+.ts-language-switcher a:hover, .ts-currency-switcher a:hover, #ts-product-video-modal .close:hover, ul.products-list a.remove:hover, .ts-header .menu-wrapper a:hover, .ts-header .header-bottom .menu-wrapper a:hover, table.shop_table .product-remove a:hover, table.compare-list tr.remove td > a .remove:hover, .cart_list li a.remove:hover {
+	color: #fff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.ts-header nav > ul.menu li.ts-normal-menu ul.sub-menu li > a {
+    display: block !important;
+	padding: 10px 12px !important;
+	line-height:20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ts-header nav > ul.menu li.ts-normal-menu ul.sub-menu li > a:hover {
+	color: #ff8d00 !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    background: #fff;
+}
+.ts-header nav.main-menu li {
+    line-height: 38px !important;
+    text-transform: uppercase;	
+}
+.ts-header nav.main-menu li ul li {
+    text-transform: initial;	
+}
+.ts-header .menu-wrapper .ts-menu {
+    color: #fff;
+    padding-top: 0;
+	width: 100%;
+}
+.ts-header .menu-wrapper nav > ul.menu, .ts-header .menu-wrapper nav > ul {
+    margin-bottom: 0 !important;
+    align-items: center;
+    justify-content: space-around;	
+}
+.pink-heading {
+    position: relative;
+}
+.pink-heading:before {
+	display: table;
+    content: " ";
+    height: 1px;
+    width: 100%;
+    background: #FF8D00;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.pink-heading h2 span, .pink-heading h1 span {
+	text-transform:uppercase;
+    background: #fff;
+    padding: 20px 20px 0;
+    position: relative;
+    z-index: 9;	
+    color: #FF8D00;	
+}
+.pink-heading h1 {
+	margin-bottom:0;
+}
+.pink-heading h1 span {
+	text-transform:initial;
+    padding-top: 0;
+    padding-left: 0;	
+}
+.ha-product-carousel .ha-product-carousel-image img {
+	height: 225px;
+    object-fit: cover;
+}
+header .logo-wrapper {
+    max-height: initial;
+}
+.header-middle > .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.breadcrumb-title-wrapper.breadcrumb-v1 {
+    background: #eee;
+}
+.elementor-widget-wrap > .elementor-widget-heading {
+    margin-bottom: 0;
+}
+.elementor-4752 .elementor-element.elementor-element-c4b6ea1 .ha-product-carousel-title a {
+	height:42px;
+}
+
+:root {
+  --main-color: #FF8D00;
+  --hover-color: #c95b2a;
+  --light-color: #ffffff;
+}
+
+/* 1. Thiết lập container để chia đều không gian */
+.button-container {
+	margin-top:20px;
+}
+
+/* 2. Thiết lập kiểu dáng cho từng nút */
+.awesome-button {
+  margin-bottom:10px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--light-color)!important;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0; /* Bỏ padding ngang (20px) vì flex-grow đã làm nút rộng ra */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-transform:uppercase;
+  text-decoration: none!important;
+}
+
+/* 3. Thiết lập kiểu dáng cho biểu tượng */
+.awesome-button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* 4. Hiệu ứng khi di chuột qua (Hover Effect) */
+.awesome-button:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.img-active img {
+    animation: homeslideanimate 10s infinite normal ease-out;
+}
+@keyframes homeslideanimate {
+    0% {    
+        transform: scale(1) rotate(0deg);
+    }
+    90% {
+        transform: scale(1.1) rotate(1.5deg);
+    }
+    100% {
+        transform: scale(1.1) rotate(1.5deg);
+    }
+}
+
+.footer {
+    background-color: #1a1a1a; /* Nền đen */
+    color: #ffffff; /* Chữ trắng */
+    padding: 40px 20px;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Bật Flexbox cho các cột */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Cho phép các cột xuống hàng trên mobile */
+    gap: 15px;	
+}
+
+/* Định dạng tiêu đề */
+.footer-title {
+    color: #FF8D00; /* Màu cam/vàng cho tiêu đề */
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Định dạng cột */
+.footer-column {
+    flex: 1 1 220px; /* Cơ sở cho mỗi cột: Tăng trưởng: 1, Thu hẹp: 1, Chiều rộng cơ sở: 220px */
+    margin-bottom: 30px;
+    padding-right: 20px; /* Tạo khoảng cách giữa các cột */
+}
+
+/* Định dạng chữ và trích dẫn */
+.footer-text {
+    line-height: 1.6;
+}
+
+.footer-quote {
+    font-style: italic;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* Định dạng danh sách liên kết */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+	list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffd700; /* Màu sáng hơn khi hover */
+}
+
+/* Định dạng thông tin liên hệ/social */
+.contact-info, .contact-details {
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.working-hours {
+    margin-left: 20px; /* Lùi vào cho giờ làm việc */
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #FF8D00;
+    text-decoration: underline;
+    margin-right: 15px;
+}
+
+/* Phần footer cuối */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333333; /* Đường kẻ phân cách */
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+/* Media Queries cho Responsive (Thiết bị nhỏ hơn 768px) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Chuyển sang xếp chồng trên màn hình nhỏ */
+    }
+
+    .footer-column {
+        padding-right: 0;
+        margin-bottom: 20px;
+        flex: 1 1 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+}
+
+.about-homepage {
+	width:800px;
+	margin: 0 auto;
+	text-align:center;
+}
+.bx-wrapper img {
+    width: 100%;
+}
+.footer .fa {
+    color: #FF8D00;
+}
+#pagination{
+	text-align:center; 
+    margin: 0 auto;
+    margin-top:30px; margin-bottom:30px;
+}
+#pagination *{
+	margin:0 5px;	position:relative;
+	height: 34px; min-width: 34px;
+	line-height: 34px;	font-size: 15px; font-weight: 500;
+	overflow: hidden; background-color: #FFF;
+	border-color:#666; color: #000;
+	transition:transform 0.3s ease;	-moz-transition:transform 0.3s ease;	-webkit-transition:transform 0.3s ease;
+}
+#pagination *:last-child::after{
+	display:none;
+}
+#pagination b{
+	color:#FFF; font-weight:500;
+	background-color: var( --color-hover); border-color: var( --color-hover);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+#pagination a:hover{
+	border-color:var( --color-hover); color:var( --color-hover);
+	background: none;
+	transform: translateY( -3px);
+}
+#pagination .active a{
+    background: #FF8D00;
+    color: #fff;
+}
+.elementor-heading-title{
+
+    color: #ec8353;
+}
