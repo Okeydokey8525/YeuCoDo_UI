@@ -1,4 +1,4 @@
-/* custom-homepage.css - YEUCODO Typography Foundation */
+﻿/* custom-homepage.css - YEUCODO Typography Foundation */
 :root {
   --yc-font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --yc-color-primary: #FF8D00;
@@ -84,7 +84,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   color: var(--yc-color-muted);
 }
 
-/* A2 — Desktop navigation and dropdown */
+/* A2 â€” Desktop navigation and dropdown */
 @media screen and (min-width: 992px) {
   .pc-menu ul#menu-main-menu {
     display: flex !important;
@@ -151,7 +151,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 }
 
 
-/* A4 — News section placement and CTA */
+/* A4 â€” News section placement and CTA */
 .yc-section-cta {
   text-align: center;
   margin-top: 24px;
@@ -180,7 +180,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   transform: translateY(-2px);
 }
 
-/* A7 — Homepage visual polish */
+/* A7 â€” Homepage visual polish */
 :root {
   --yc-color-surface-soft: #FFF8F0;
   --yc-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -439,7 +439,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 
 
 /* =========================================
-   A8 — Tablet and mobile responsive
+   A8 â€” Tablet and mobile responsive
    ========================================= */
 
 /* ----------- Max 1024px (Tablet) ----------- */
@@ -458,7 +458,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     padding: 10px;
     order: -1; /* Move hamburger to the left if needed */
   }
-  .ts-floating-sidebar {
+  .menu-wrapper .ts-floating-sidebar {
     position: fixed;
     top: 0;
     left: -100%;
@@ -472,7 +472,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     overflow-y: auto;
     padding-top: 20px;
   }
-  .ts-floating-sidebar.is-open {
+  .menu-wrapper .ts-floating-sidebar.is-open {
     left: 0;
   }
   .main-menu .menu {
@@ -513,7 +513,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     z-index: 10;
   }
   .ts-menu-drop-icon::after {
-    content: "▼";
+    content: "â–¼";
     font-size: 12px;
     color: #666;
     transition: transform 0.2s ease;
@@ -534,9 +534,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   body.menu-open {
     overflow: hidden;
   }
-  .header-bottom {
-    display: none !important; /* Hide original desktop menu bar */
-  }
+  
 
   /* Banner */
   .page-slider .bxslider img {
@@ -575,7 +573,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     line-height: 1.3 !important;
   }
 
-  /* Marquee YEU CODO CÓ GÌ */
+  /* Marquee YEU CODO CÃ“ GÃŒ */
   .section-pvcd .marquee-content li {
     padding: 12px;
     margin: 0 8px;
@@ -625,7 +623,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     float: left;
   }
 
-  /* Marquee YEU CODO CÓ GÌ - scale down slightly */
+  /* Marquee YEU CODO CÃ“ GÃŒ - scale down slightly */
   .section-pvcd .marquee-content li {
     width: 220px;
   }
@@ -662,3 +660,6 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     padding: 12px 16px !important;
   }
 }
+
+
+
