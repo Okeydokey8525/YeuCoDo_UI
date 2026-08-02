@@ -661,5 +661,135 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   }
 }
 
+/* A11 — Post-QA homepage fixes */
+
+/* A11.1 — Desktop navigation spacing */
+@media (min-width: 1025px) {
+  .ts-header .pc-menu ul#menu-main-menu {
+    gap: clamp(12px, 2vw, 32px);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .ts-header .pc-menu ul#menu-main-menu > li.menu-item {
+    margin: 0 !important;
+  }
+
+  .ts-header .pc-menu ul#menu-main-menu > li.menu-item > a {
+    white-space: nowrap;
+  }
+}
+
+/* A11.2 — Remove legacy shopping CTA */
+/* The homepage-only Elementor widget was removed from index.html. */
+
+/* A11.3 — Product carousel navigation */
+.section-products .ha-product-carousel-wrapper.slick-initialized {
+  box-sizing: border-box;
+  padding-inline: 52px;
+}
+
+.section-products .ha-product-carousel-wrapper .slick-prev,
+.section-products .ha-product-carousel-wrapper .slick-next {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0;
+  border-color: var(--yc-color-primary);
+  background-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.section-products .ha-product-carousel-wrapper .slick-prev {
+  left: 4px;
+}
+
+.section-products .ha-product-carousel-wrapper .slick-next {
+  right: 4px;
+}
+
+/* A11.4 — Desktop sticky navigation */
+@media (min-width: 1025px) {
+  .ts-header .sticky-wrapper.is-sticky .icon-menu-sticky-header {
+    display: none !important;
+  }
+
+  .ts-header .sticky-wrapper.is-sticky .header-bottom {
+    display: block !important;
+  }
+
+  .ts-header .sticky-wrapper.is-sticky .header-bottom > .container {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body.menu-open .ts-header .header-sticky {
+    z-index: 9999;
+  }
+
+  .ts-header .menu-wrapper .main-menu .sub-menu {
+    position: static;
+    left: auto;
+    width: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .ts-header .menu-wrapper .main-menu .sub-menu.is-open {
+    display: block;
+  }
+}
+
+/* A11.5 — Footer contrast */
+.footer .footer-text,
+.footer .footer-quote,
+.footer .contact-details,
+.footer .contact-details p {
+  color: #e5e7eb;
+}
+
+.footer .footer-text strong,
+.footer .contact-details strong {
+  color: #ffffff;
+}
+
+.footer .footer-links a {
+  color: #ffffff;
+}
+
+.footer .footer-links a:hover,
+.footer .footer-links a:focus {
+  color: var(--yc-color-primary);
+}
+
+@media (max-width: 480px) {
+  .section-products .ha-product-carousel-wrapper.slick-initialized {
+    padding-inline: 44px;
+  }
+
+  .section-products .ha-product-carousel-wrapper .slick-prev,
+  .section-products .ha-product-carousel-wrapper .slick-next {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .section-products .ha-product-carousel-wrapper .slick-prev {
+    left: 2px;
+  }
+
+  .section-products .ha-product-carousel-wrapper .slick-next {
+    right: 2px;
+  }
+}
+
 
 
