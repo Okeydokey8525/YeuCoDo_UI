@@ -865,5 +865,92 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   background: #f15a24 !important;
 }
 
+/* A12 — Homepage bento feature blocks */
+/* A12.1 layout */
+.yc-bento-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+.yc-bento-block {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+.yc-bento-block:last-child {
+    margin-bottom: 0;
+}
+.yc-bento-media, .yc-bento-content {
+    flex: 1;
+}
+.yc-bento-block.is-reverse {
+    flex-direction: row-reverse;
+}
 
+/* A12.2 typography */
+.yc-bento-title {
+    color: #001534;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+.yc-bento-text {
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 
+/* A12.3 image */
+.yc-bento-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* A12.4 CTA */
+.yc-bento-cta {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--yc-color-primary);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.yc-bento-cta:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+/* A12.5 responsive */
+@media (max-width: 1024px) {
+    .yc-bento-section {
+        padding: 40px 20px;
+    }
+    .yc-bento-block {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    .yc-bento-title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 768px) {
+    .yc-bento-block, .yc-bento-block.is-reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .yc-bento-media, .yc-bento-content {
+        width: 100%;
+    }
+    .yc-bento-media img {
+        aspect-ratio: 16 / 9;
+    }
+}
