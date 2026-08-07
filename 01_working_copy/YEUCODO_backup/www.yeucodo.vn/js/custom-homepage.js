@@ -1,4 +1,4 @@
-﻿/* custom-homepage.js - A2 Desktop navigation & A8 Mobile Menu */
+/* custom-homepage.js - A2 Desktop navigation & A8 Mobile Menu */
 document.addEventListener('DOMContentLoaded', function() {
     // Ngn href="#" nhy lAn  u trang cho mc cha
     var parentLinks = document.querySelectorAll('.pc-menu .menu-item-has-children > a[href="#"]');
@@ -91,4 +91,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
 });

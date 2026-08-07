@@ -1,4 +1,4 @@
-﻿/* custom-homepage.css - YEUCODO Typography Foundation */
+/* custom-homepage.css - YEUCODO Typography Foundation */
 :root {
   --yc-font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --yc-color-primary: #FF8D00;
@@ -89,7 +89,8 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   .pc-menu ul#menu-main-menu {
     display: flex !important;
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
   }
   
   .pc-menu ul#menu-main-menu > li.menu-item {
@@ -668,8 +669,9 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   .ts-header .pc-menu ul#menu-main-menu {
     gap: clamp(12px, 2vw, 32px);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
+    width: 100%;
   }
 
   .ts-header .pc-menu ul#menu-main-menu > li.menu-item {
@@ -685,13 +687,33 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 /* The homepage-only Elementor widget was removed from index.html. */
 
 /* A11.3 — Product carousel navigation */
-.section-products .ha-product-carousel-wrapper.slick-initialized {
+.section-products .ha-product-carousel-wrapper.slick-initialized,
+.section-news .ha-posts-carousel-wrapper.slick-initialized,
+.section-partners .partners-carousel-wrapper.slick-initialized {
   box-sizing: border-box;
   padding-inline: 52px;
 }
 
+/* Fallback for partners carousel if JS fails */
+.partners-carousel-wrapper:not(.slick-initialized) .partners-carousel,
+.section-partners-widget .ha-posts-carousel-wrapper:not(.slick-initialized) {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.partners-carousel-wrapper:not(.slick-initialized) .ha-posts-carousel-slick,
+.section-partners-widget .ha-posts-carousel-wrapper:not(.slick-initialized) .ha-posts-carousel-slick {
+  flex: 0 0 150px;
+}
+
 .section-products .ha-product-carousel-wrapper .slick-prev,
-.section-products .ha-product-carousel-wrapper .slick-next {
+.section-products .ha-product-carousel-wrapper .slick-next,
+.section-news .ha-posts-carousel-wrapper .slick-prev,
+.section-news .ha-posts-carousel-wrapper .slick-next,
+.section-partners .partners-carousel-wrapper .slick-prev,
+.section-partners .partners-carousel-wrapper .slick-next {
   top: 50%;
   width: 44px;
   height: 44px;
@@ -705,11 +727,15 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
   z-index: 2;
 }
 
-.section-products .ha-product-carousel-wrapper .slick-prev {
+.section-products .ha-product-carousel-wrapper .slick-prev,
+.section-news .ha-posts-carousel-wrapper .slick-prev,
+.section-partners .partners-carousel-wrapper .slick-prev {
   left: 4px;
 }
 
-.section-products .ha-product-carousel-wrapper .slick-next {
+.section-products .ha-product-carousel-wrapper .slick-next,
+.section-news .ha-posts-carousel-wrapper .slick-next,
+.section-partners .partners-carousel-wrapper .slick-next {
   right: 4px;
 }
 
@@ -770,25 +796,73 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 }
 
 @media (max-width: 480px) {
-  .section-products .ha-product-carousel-wrapper.slick-initialized {
+  .section-products .ha-product-carousel-wrapper.slick-initialized,
+  .section-news .ha-posts-carousel-wrapper.slick-initialized,
+  .section-partners .partners-carousel-wrapper.slick-initialized {
     padding-inline: 44px;
   }
 
   .section-products .ha-product-carousel-wrapper .slick-prev,
-  .section-products .ha-product-carousel-wrapper .slick-next {
+  .section-products .ha-product-carousel-wrapper .slick-next,
+  .section-news .ha-posts-carousel-wrapper .slick-prev,
+  .section-news .ha-posts-carousel-wrapper .slick-next,
+  .section-partners .partners-carousel-wrapper .slick-prev,
+  .section-partners .partners-carousel-wrapper .slick-next {
     width: 40px;
     height: 40px;
     min-width: 40px;
     min-height: 40px;
   }
 
-  .section-products .ha-product-carousel-wrapper .slick-prev {
+  .section-products .ha-product-carousel-wrapper .slick-prev,
+  .section-news .ha-posts-carousel-wrapper .slick-prev,
+  .section-partners .partners-carousel-wrapper .slick-prev {
     left: 2px;
   }
 
-  .section-products .ha-product-carousel-wrapper .slick-next {
+  .section-products .ha-product-carousel-wrapper .slick-next,
+  .section-news .ha-posts-carousel-wrapper .slick-next,
+  .section-partners .partners-carousel-wrapper .slick-next {
     right: 2px;
   }
+}
+
+/* Partners carousel dots styling */
+.section-partners-widget .slick-dots {
+  bottom: -40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.section-partners-widget .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.section-partners-widget .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #fcd5ce !important;
+  border-radius: 50% !important;
+}
+.section-partners-widget .slick-dots li.slick-active button {
+  background: #f15a24 !important;
 }
 
 
