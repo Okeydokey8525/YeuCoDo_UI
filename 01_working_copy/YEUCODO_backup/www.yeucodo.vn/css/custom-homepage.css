@@ -1012,8 +1012,11 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 
 /* Intro */
 .about-homepage {
-    padding-top: 48px !important;
+    padding-top: 28px !important;
     padding-bottom: 48px !important;
+}
+.about-homepage p:first-child {
+    margin-top: 0 !important;
 }
 
 /* Cửa hàng */
@@ -1057,7 +1060,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
         --yc-block-gap: 40px;
     }
     .about-homepage {
-        padding-top: 36px !important;
+        padding-top: 24px !important;
         padding-bottom: 36px !important;
     }
     .elementor-section.section-partners {
@@ -1072,7 +1075,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
         --yc-block-gap: 32px;
     }
     .about-homepage {
-        padding-top: 24px !important;
+        padding-top: 20px !important;
         padding-bottom: 24px !important;
     }
     .elementor-section.section-partners {
