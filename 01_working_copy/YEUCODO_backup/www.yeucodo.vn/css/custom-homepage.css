@@ -1,0 +1,1320 @@
+/* custom-homepage.css - YEUCODO Typography Foundation */
+:root {
+  --yc-font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --yc-color-primary: #FF8D00;
+  --yc-color-heading: #222222;
+  --yc-color-body: #444444;
+  --yc-color-muted: #666666;
+  --yc-color-surface: #ffffff;
+  --yc-color-border: #e0e0e0;
+  --yc-radius-sm: 4px;
+  --yc-radius-md: 6px;
+  --yc-shadow-card: 0 4px 12px rgba(0,0,0,0.08);
+  /* A13.1 Spacing / Vertical Rhythm */
+  --yc-section-gap: 64px;
+  --yc-section-gap-lg: 72px;
+  --yc-section-gap-related: 40px;
+  --yc-block-gap: 56px;
+}
+
+body, html {
+  font-family: var(--yc-font-family) !important;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--yc-color-body);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.elementor-heading-title, 
+.entry-title {
+  font-family: var(--yc-font-family) !important;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--yc-color-heading);
+  text-transform: none !important;
+}
+
+/* Paragraphs */
+p, .elementor-text-editor, .woocommerce-product-details__short-description {
+  line-height: 1.65;
+  color: var(--yc-color-body);
+}
+
+/* Buttons */
+a.button, button, .button, input[type="button"], input[type="submit"], .elementor-button {
+  font-family: var(--yc-font-family) !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  border-radius: var(--yc-radius-md) !important;
+  background-color: var(--yc-color-primary) !important;
+  border-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  transition: opacity 0.3s ease !important;
+}
+
+a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:hover, .elementor-button:hover {
+  opacity: 0.85 !important;
+  background-color: var(--yc-color-primary) !important;
+  border-color: var(--yc-color-primary) !important;
+}
+
+/* Menu */
+.menu-item a, .ts-menu a, .menu-item-has-children > a {
+  font-family: var(--yc-font-family) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+/* Section Headings */
+.elementor-heading-title.elementor-size-default, .section-title {
+  font-size: 30px !important;
+  line-height: 1.3 !important;
+  margin-bottom: 24px !important;
+}
+
+/* Card / Product Titles */
+.woocommerce-loop-product__title, .product-title, .elementor-post__title, .entry-title a {
+  font-family: var(--yc-font-family) !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+/* Metadata */
+.price, .date, .meta, .elementor-post__meta-data, .price del, .woocommerce-Price-amount {
+  font-size: 13px !important;
+  color: var(--yc-color-muted);
+}
+
+/* A2 â€” Desktop navigation and dropdown */
+@media screen and (min-width: 992px) {
+  .pc-menu ul#menu-main-menu {
+    display: flex !important;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .pc-menu ul#menu-main-menu > li.menu-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .pc-menu ul#menu-main-menu > li.menu-item > a {
+    text-transform: none !important;
+  }
+
+  .pc-menu ul#menu-main-menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background: #ffffff;
+    border: 1px solid var(--yc-color-border);
+    border-radius: 8px;
+    box-shadow: var(--yc-shadow-card);
+    padding: 8px 0;
+    z-index: 9999;
+    
+    /* hide by default */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease,
+      transform 0.2s ease;
+    display: block !important;
+  }
+  
+  .pc-menu ul#menu-main-menu > li.menu-item:hover > .sub-menu,
+  .pc-menu ul#menu-main-menu > li.menu-item:focus-within > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .pc-menu ul#menu-main-menu .sub-menu li.menu-item a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 16px;
+    color: var(--yc-color-heading) !important;
+    text-transform: none !important;
+    background: transparent;
+  }
+
+  .pc-menu ul#menu-main-menu .sub-menu li.menu-item a:hover,
+  .pc-menu ul#menu-main-menu .sub-menu li.menu-item a:focus {
+    background: #fff4e6 !important; 
+    color: var(--yc-color-primary) !important;
+  }
+}
+
+
+/* A4 â€” News section placement and CTA */
+.yc-section-cta {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.yc-button {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  font-family: var(--yc-font-family);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: var(--yc-radius-md);
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: var(--yc-shadow-card);
+  border: 1px solid var(--yc-color-primary);
+}
+
+.yc-button:hover,
+.yc-button:focus {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* A7 â€” Homepage visual polish */
+:root {
+  --yc-color-surface-soft: #FFF8F0;
+  --yc-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --yc-radius-lg: 16px;
+}
+
+/* 3.1 & 3.2 Spacing and Surface */
+.about-homepage {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  background-color: #ffffff;
+}
+
+.section-pvcd {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  background-color: var(--yc-color-surface-soft);
+}
+
+.section-products {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  background-color: #ffffff;
+}
+
+.section-gallery {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  background-color: var(--yc-color-surface-soft);
+}
+
+.section-news {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  background-color: #ffffff;
+}
+
+/* 3.3 Section Titles */
+.about-homepage h3,
+.section-pvcd h2,
+.section-products h2.elementor-heading-title,
+.section-gallery h2.elementor-heading-title,
+.section-news h2.elementor-heading-title {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: #2D3748 !important;
+  text-align: center !important;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px !important;
+  padding-bottom: 12px;
+}
+
+.about-homepage h3 span,
+.section-pvcd h2 span,
+.section-products h2.elementor-heading-title span,
+.section-gallery h2.elementor-heading-title span,
+.section-news h2.elementor-heading-title span {
+  font-size: inherit !important;
+  color: inherit !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.section-products .pink-heading::before,
+.section-gallery .pink-heading::before,
+.section-news .pink-heading::before {
+  display: none !important;
+}
+
+.about-homepage h3::after,
+.section-pvcd h2::after,
+.section-products h2.elementor-heading-title::after,
+.section-gallery h2.elementor-heading-title::after,
+.section-news h2.elementor-heading-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 4px;
+  background-color: var(--yc-color-primary);
+  border-radius: 2px;
+}
+
+.section-pvcd .elementor-widget-container,
+.section-products .elementor-widget-heading,
+.section-gallery .elementor-widget-heading,
+.section-news .elementor-widget-heading {
+  text-align: center;
+}
+
+/* 3.4 YEU CODO CO GI */
+.section-pvcd .marquee-content li {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  
+}
+
+.section-pvcd .marquee-content li img {
+  border-radius: 8px;
+}
+
+/* 3.5 Products */
+.section-products .ha-product-carousel-item-inner {
+  background-color: #ffffff;
+  border-radius: var(--yc-radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  
+  height: 100%;
+}
+.section-products .ha-product-carousel-item-inner:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--yc-shadow-hover);
+}
+.section-products .ha-product-carousel-image {
+  margin-bottom: 16px;
+}
+.section-products .ha-product-carousel-image img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+.section-products .ha-product-carousel-title {
+  margin-bottom: 8px !important;
+}
+.section-products .ha-product-carousel-title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2D3748;
+}
+.section-products .ha-product-carousel-price {
+  font-weight: 700;
+  color: var(--yc-color-primary);
+  font-size: 16px;
+}
+.section-products .ha-product-carousel-price del {
+  color: #A0AEC0;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+/* 3.6 Gallery */
+.gallery-item-pro {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.gallery-container-pro img {
+  transition: transform 0.4s ease;
+  display: block;
+  width: 100%;
+}
+.gallery-container-pro:hover img {
+  transform: scale(1.03);
+}
+
+/* 3.7 News Cards */
+.section-news .ha-posts-carousel__content-wrap {
+  background-color: #ffffff;
+  border-radius: var(--yc-radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.section-news .ha-posts-carousel__content-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--yc-shadow-hover);
+}
+.section-news .ha-product-carousel-image {
+  margin-bottom: 0; 
+}
+.section-news .ha-product-carousel-image img {
+  border-radius: var(--yc-radius-lg) var(--yc-radius-lg) 0 0;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.section-news .ha-posts-carousel__title,
+.section-news .ha-posts-carousel__content-text {
+  padding: 0 16px;
+}
+.section-news .ha-posts-carousel__title {
+  padding-top: 16px;
+  margin-bottom: 8px;
+}
+.section-news .ha-posts-carousel__title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2D3748;
+  font-weight: 600;
+}
+.section-news .ha-posts-carousel__content-text {
+  padding-bottom: 16px;
+  margin-top: auto;
+}
+.section-news .ha-posts-carousel__meta-date span {
+  font-size: 13px;
+  color: #718096;
+}
+
+/* 3.8 CTA */
+.yc-button.yc-button-primary {
+  min-height: 44px;
+  padding: 12px 28px !important;
+  border-radius: 10px !important;
+  background-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 600;
+  border: none !important;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(255, 141, 0, 0.3) !important;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.yc-button.yc-button-primary:hover {
+  background-color: #e67e00 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(255, 141, 0, 0.4) !important;
+  opacity: 1 !important;
+}
+.yc-button.yc-button-primary:focus-visible {
+  outline: 3px solid rgba(255, 141, 0, 0.5);
+  outline-offset: 2px;
+}
+
+/* 4. Responsive */
+@media (max-width: 768px) {
+  .about-homepage,
+  .section-pvcd,
+  .section-products,
+  .section-gallery,
+  .section-news {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .about-homepage h3,
+  .section-pvcd h2,
+  .section-products h2.elementor-heading-title,
+  .section-gallery h2.elementor-heading-title,
+  .section-news h2.elementor-heading-title {
+    font-size: 26px !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+
+
+
+/* =========================================
+   A8 â€” Tablet and mobile responsive
+   ========================================= */
+
+/* ----------- Max 1024px (Tablet) ----------- */
+@media (max-width: 1024px) {
+  /* Header & Menu */
+  .ts-header .header-middle .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .icon-menu-sticky-header {
+    display: block !important;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    order: -1; /* Move hamburger to the left if needed */
+  }
+  .menu-wrapper .ts-floating-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 320px;
+    max-width: 85vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding-top: 20px;
+  }
+  .menu-wrapper .ts-floating-sidebar.is-open {
+    left: 0;
+  }
+  .main-menu .menu {
+    display: block !important;
+  }
+  .main-menu .menu-item {
+    display: block !important;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+  }
+  .main-menu .menu-item a {
+    padding: 14px 20px;
+    display: block;
+    font-size: 15px;
+    color: #333;
+    text-transform: none;
+    line-height: 1.4;
+  }
+  .main-menu .sub-menu {
+    display: none;
+    padding-left: 20px;
+    background-color: #fcfcfc;
+    border-top: 1px solid #f0f0f0;
+  }
+  .main-menu .sub-menu.is-open {
+    display: block;
+  }
+  .ts-menu-drop-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .ts-menu-drop-icon::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+  .ts-menu-drop-icon.is-active::after {
+    transform: rotate(225deg);
+  }
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 9998;
+    display: none;
+  }
+  .mobile-menu-overlay.is-active {
+    display: block;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
+  
+
+  /* Banner */
+  .page-slider .bxslider img {
+    min-height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* ----------- Max 768px (Mobile/Tablet Portrait) ----------- */
+@media (max-width: 768px) {
+  /* Intro */
+  .about-homepage p {
+    text-align: left !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Section Spacing */
+  .about-homepage,
+  .section-pvcd,
+  .section-products,
+  .section-gallery,
+  .section-news {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Titles */
+  .about-homepage h3,
+  .section-pvcd h2,
+  .section-products h2.elementor-heading-title,
+  .section-gallery h2.elementor-heading-title,
+  .section-news h2.elementor-heading-title {
+    font-size: 26px !important;
+    margin-bottom: 32px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Marquee YEU CODO CÃ“ GÃŒ */
+  .section-pvcd .marquee-content li {
+    padding: 12px;
+    margin: 0 8px;
+  }
+  .section-pvcd .marquee-content li img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* Products */
+  .ha-product-carousel-image img {
+    height: auto;
+  }
+
+  /* CTA */
+  .yc-button.yc-button-primary {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer-widget {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+}
+
+/* ----------- Max 480px (Large Phones) ----------- */
+@media (max-width: 480px) {
+  /* Intro */
+  .about-homepage h3,
+  .section-pvcd h2,
+  .section-products h2.elementor-heading-title,
+  .section-gallery h2.elementor-heading-title,
+  .section-news h2.elementor-heading-title {
+    font-size: 24px !important;
+    padding-bottom: 10px;
+  }
+
+  /* Gallery */
+  .gallery-item-pro {
+    width: 50% !important; /* Force 2 columns instead of 3 */
+    float: left;
+  }
+
+  /* Marquee YEU CODO CÃ“ GÃŒ - scale down slightly */
+  .section-pvcd .marquee-content li {
+    width: 220px;
+  }
+}
+
+/* ----------- Max 390px (Common Phones) ----------- */
+@media (max-width: 390px) {
+  .section-pvcd .marquee-content li {
+    width: 200px;
+    padding: 10px;
+    margin: 0 6px;
+  }
+  .section-pvcd .marquee-content li img {
+    max-width: 100px;
+  }
+}
+
+/* ----------- Max 360px (Small Phones) ----------- */
+@media (max-width: 360px) {
+  .about-homepage h3,
+  .section-pvcd h2,
+  .section-products h2.elementor-heading-title,
+  .section-gallery h2.elementor-heading-title,
+  .section-news h2.elementor-heading-title {
+    font-size: 22px !important;
+  }
+
+  .gallery-item-pro {
+    width: 100% !important; /* Force 1 column if too small */
+  }
+  
+  .yc-button.yc-button-primary {
+    font-size: 14px;
+    padding: 12px 16px !important;
+  }
+}
+
+/* A11 — Post-QA homepage fixes */
+
+/* A11.1 — Desktop navigation spacing */
+@media (min-width: 1025px) {
+  .ts-header .pc-menu ul#menu-main-menu {
+    gap: clamp(12px, 2vw, 32px);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .ts-header .pc-menu ul#menu-main-menu > li.menu-item {
+    margin: 0 !important;
+  }
+
+  .ts-header .pc-menu ul#menu-main-menu > li.menu-item > a {
+    white-space: nowrap;
+  }
+}
+
+/* A11.2 — Remove legacy shopping CTA */
+/* The homepage-only Elementor widget was removed from index.html. */
+
+/* A11.3 — Product carousel navigation */
+.section-products .ha-product-carousel-wrapper.slick-initialized,
+.section-news .ha-posts-carousel-wrapper.slick-initialized,
+.section-partners .partners-carousel-wrapper.slick-initialized {
+  box-sizing: border-box;
+  padding-inline: 52px;
+}
+
+/* Fallback for partners carousel if JS fails */
+.partners-carousel-wrapper:not(.slick-initialized) .partners-carousel,
+.section-partners-widget .ha-posts-carousel-wrapper:not(.slick-initialized) {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.partners-carousel-wrapper:not(.slick-initialized) .ha-posts-carousel-slick,
+.section-partners-widget .ha-posts-carousel-wrapper:not(.slick-initialized) .ha-posts-carousel-slick {
+  flex: 0 0 150px;
+}
+
+.section-products .ha-product-carousel-wrapper .slick-prev,
+.section-products .ha-product-carousel-wrapper .slick-next,
+.section-news .ha-posts-carousel-wrapper .slick-prev,
+.section-news .ha-posts-carousel-wrapper .slick-next,
+.section-partners .partners-carousel-wrapper .slick-prev,
+.section-partners .partners-carousel-wrapper .slick-next {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0;
+  border-color: var(--yc-color-primary);
+  background-color: var(--yc-color-primary) !important;
+  color: #ffffff !important;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.section-products .ha-product-carousel-wrapper .slick-prev,
+.section-news .ha-posts-carousel-wrapper .slick-prev,
+.section-partners .partners-carousel-wrapper .slick-prev {
+  left: 4px;
+}
+
+.section-products .ha-product-carousel-wrapper .slick-next,
+.section-news .ha-posts-carousel-wrapper .slick-next,
+.section-partners .partners-carousel-wrapper .slick-next {
+  right: 4px;
+}
+
+/* A11.4 — Desktop sticky navigation */
+@media (min-width: 1025px) {
+  .ts-header .sticky-wrapper.is-sticky .icon-menu-sticky-header {
+    display: none !important;
+  }
+
+  .ts-header .sticky-wrapper.is-sticky .header-bottom {
+    display: block !important;
+  }
+
+  .ts-header .sticky-wrapper.is-sticky .header-bottom > .container {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body.menu-open .ts-header .header-sticky {
+    z-index: 9999;
+  }
+
+  .ts-header .menu-wrapper .main-menu .sub-menu {
+    position: static;
+    left: auto;
+    width: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .ts-header .menu-wrapper .main-menu .sub-menu.is-open {
+    display: block;
+  }
+}
+
+/* A11.5 — Footer contrast */
+.footer .footer-text,
+.footer .footer-quote,
+.footer .contact-details,
+.footer .contact-details p {
+  color: #e5e7eb;
+}
+
+.footer .footer-text strong,
+.footer .contact-details strong {
+  color: #ffffff;
+}
+
+.footer .footer-links a {
+  color: #ffffff;
+}
+
+.footer .footer-links a:hover,
+.footer .footer-links a:focus {
+  color: var(--yc-color-primary);
+}
+
+@media (max-width: 480px) {
+  .section-products .ha-product-carousel-wrapper.slick-initialized,
+  .section-news .ha-posts-carousel-wrapper.slick-initialized,
+  .section-partners .partners-carousel-wrapper.slick-initialized {
+    padding-inline: 44px;
+  }
+
+  .section-products .ha-product-carousel-wrapper .slick-prev,
+  .section-products .ha-product-carousel-wrapper .slick-next,
+  .section-news .ha-posts-carousel-wrapper .slick-prev,
+  .section-news .ha-posts-carousel-wrapper .slick-next,
+  .section-partners .partners-carousel-wrapper .slick-prev,
+  .section-partners .partners-carousel-wrapper .slick-next {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .section-products .ha-product-carousel-wrapper .slick-prev,
+  .section-news .ha-posts-carousel-wrapper .slick-prev,
+  .section-partners .partners-carousel-wrapper .slick-prev {
+    left: 2px;
+  }
+
+  .section-products .ha-product-carousel-wrapper .slick-next,
+  .section-news .ha-posts-carousel-wrapper .slick-next,
+  .section-partners .partners-carousel-wrapper .slick-next {
+    right: 2px;
+  }
+}
+
+/* Partners carousel dots styling */
+.section-partners-widget .slick-dots {
+  bottom: -40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.section-partners-widget .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.section-partners-widget .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #fcd5ce !important;
+  border-radius: 50% !important;
+}
+.section-partners-widget .slick-dots li.slick-active button {
+  background: #f15a24 !important;
+}
+
+/* A12 — Homepage bento feature blocks */
+/* A12.1 layout */
+.yc-bento-section {
+    padding: 20px 20px var(--yc-section-gap-lg) 20px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    clear: both;
+}
+.yc-bento-section .elementor-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: block;
+}
+.yc-bento-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--yc-block-gap);
+    margin-bottom: var(--yc-block-gap);
+}
+.yc-bento-block:last-child {
+    margin-bottom: 0;
+}
+.yc-bento-block.is-reverse .yc-bento-media {
+    order: 2;
+}
+.yc-bento-block.is-reverse .yc-bento-content {
+    order: 1;
+}
+
+/* Fix sticky header rendering inline between sections */
+.ts-header .sticky-wrapper.is-sticky .header-sticky {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
+
+/* A12.2 typography */
+.yc-bento-title {
+    color: #001534;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.yc-bento-text {
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 580px;
+}
+
+/* A12.3 image */
+.yc-bento-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* A12.4 CTA */
+.yc-bento-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    min-height: 44px;
+    background-color: var(--yc-color-primary, #f15a24);
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.yc-bento-cta:hover {
+    background-color: #d14a1c;
+    color: #ffffff !important;
+}
+
+/* A12.5 responsive */
+@media (max-width: 1024px) {
+    .yc-bento-section {
+        padding: 60px 20px;
+    }
+    .yc-bento-block {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    .yc-bento-title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 768px) {
+    .yc-bento-block {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .yc-bento-block.is-reverse .yc-bento-media,
+    .yc-bento-block.is-reverse .yc-bento-content {
+        order: initial;
+    }
+    .yc-bento-media img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* =========================================
+   A13.1 — Vertical Rhythm Refinement
+   ========================================= */
+
+/* Reset margins to prevent double spacing */
+.about-homepage,
+.elementor-section.section-products,
+.elementor-section.section-gallery,
+.elementor-section.section-news,
+.elementor-section.section-partners {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Intro */
+.page-slider .bx-wrapper {
+    margin-bottom: 0 !important;
+}
+.about-homepage {
+    padding-top: 28px !important;
+    padding-bottom: 48px !important;
+}
+.about-homepage p:first-child {
+    margin-top: 0 !important;
+}
+
+/* Cửa hàng */
+.elementor-section.section-products {
+    padding-top: 0 !important;
+    padding-bottom: var(--yc-section-gap) !important;
+}
+
+/* Gallery */
+.elementor-section.section-gallery {
+    padding-top: 0 !important;
+    padding-bottom: var(--yc-section-gap) !important;
+}
+
+/* News */
+.elementor-section.section-news {
+    padding-top: 0 !important;
+    padding-bottom: var(--yc-section-gap-lg) !important;
+}
+
+/* Partners */
+.elementor-section.section-partners {
+    padding-top: 0 !important;
+    padding-bottom: 56px !important;
+}
+
+/* Responsive spacing */
+@media (max-width: 1024px) {
+    :root {
+        --yc-section-gap: 52px;
+        --yc-section-gap-lg: 58px;
+        --yc-section-gap-related: 32px;
+        --yc-block-gap: 46px;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --yc-section-gap: 48px;
+        --yc-section-gap-lg: 48px;
+        --yc-section-gap-related: 28px;
+        --yc-block-gap: 40px;
+    }
+    .about-homepage {
+        padding-top: 24px !important;
+        padding-bottom: 36px !important;
+    }
+    .elementor-section.section-partners {
+        padding-bottom: 40px !important;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --yc-section-gap: 40px;
+        --yc-section-gap-lg: 40px;
+        --yc-section-gap-related: 24px;
+        --yc-block-gap: 32px;
+    }
+    .about-homepage {
+        padding-top: 20px !important;
+        padding-bottom: 24px !important;
+    }
+    .elementor-section.section-partners {
+        padding-bottom: 32px !important;
+    }
+}
+
+/* =========================================
+   A13.2A — Section headings vertical alignment
+   ========================================= */
+.section-products .elementor-widget-heading,
+.section-gallery .elementor-widget-heading,
+.section-news .elementor-widget-heading {
+    padding-top: 24px;
+}
+@media (max-width: 768px) {
+    .section-products .elementor-widget-heading,
+    .section-gallery .elementor-widget-heading,
+    .section-news .elementor-widget-heading {
+        padding-top: 16px;
+    }
+}
+
+/* =========================================
+   A14.1 — Mobile homepage layout refinement
+   ========================================= */
+
+/* A14.1.1 — Mobile header */
+@media (max-width: 768px) {
+    .header-middle .container {
+        display: grid !important;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .header-left {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+        float: none !important;
+    }
+    .icon-menu-sticky-header {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        display: block !important;
+        float: none !important;
+        order: 0 !important;
+    }
+    .header-right {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        display: block !important;
+        float: none !important;
+    }
+    .shopping-cart-wrapper.hidden-phone {
+        display: block !important;
+    }
+    .ts-search-by-category.hidden-phone {
+        display: block !important;
+        grid-column: 1 / 4;
+        grid-row: 2;
+        margin-top: 10px;
+        float: none !important;
+        width: 100%;
+    }
+    .search-table {
+        display: flex;
+        width: 100%;
+    }
+    .search-field {
+        flex: 1;
+    }
+    .search-field input {
+        width: 100%;
+        height: 44px;
+        padding: 0 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    .search-button input {
+        height: 44px;
+    }
+}
+
+/* A14.1.2 — Mobile intro */
+@media (max-width: 768px) {
+    .about-homepage {
+        text-align: center !important;
+    }
+    .about-homepage * {
+        text-align: center !important;
+    }
+}
+
+/* A14.1.4 — Mobile gallery */
+@media (max-width: 480px) {
+    #gallery-masonry {
+        height: auto !important;
+        display: block !important;
+    }
+    #gallery-masonry .gallery-item-pro {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        margin-bottom: 16px !important;
+        display: block !important;
+    }
+    #gallery-masonry .gallery-item-pro:nth-child(n+5) {
+        display: none !important;
+    }
+    .button-gallery-pro {
+        margin-top: 24px !important;
+        min-height: 44px;
+    }
+}
+
+/* =========================================
+   A14.2 — Mobile alignment fixes
+   ========================================= */
+
+/* A14.2.1 — Mobile normal/sticky header alignment */
+@media (max-width: 768px) {
+    .ts-header .header-middle .container {
+        display: grid !important;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        padding-inline: 16px !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    .ts-header .header-middle .header-left {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+        float: none !important;
+    }
+    .ts-header .header-middle .icon-menu-sticky-header {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        float: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+    .ts-header .header-middle .header-right {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        float: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+    .ts-header .header-middle .ts-search-by-category.hidden-phone {
+        display: block !important;
+        grid-column: 1 / 4;
+        grid-row: 2;
+        margin-top: 10px;
+        float: none !important;
+        width: 100%;
+    }
+}
+
+/* A14.2.2 — Mobile intro centering */
+@media (max-width: 768px) {
+    .about-homepage {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    .about-homepage p,
+    .about-homepage span,
+    .about-homepage strong,
+    .about-homepage h3 {
+        text-align: center !important;
+        display: block; 
+    }
+    .about-homepage span, 
+    .about-homepage strong {
+        display: inline !important; 
+    }
+    .about-homepage p {
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* A14.2.3 — Mobile YEUCODO carousel alignment */
+@media (max-width: 480px) {
+    .section-pvcd .marquee-content li {
+        width: 80vw !important;
+        max-width: 300px !important;
+    }
+    .section-pvcd .marquee-content img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+/* A14.2.4 — Mobile Bento CTA alignment */
+@media (max-width: 768px) {
+    .yc-bento-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .yc-bento-cta {
+        margin-inline: auto !important;
+    }
+}
