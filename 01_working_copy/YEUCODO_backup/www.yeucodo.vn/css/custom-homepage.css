@@ -1068,3 +1068,15 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
         padding-bottom: 32px !important;
     }
 }
+
+/* =========================================
+   A13.2A — News heading vertical alignment
+   ========================================= */
+.section-news .elementor-widget-heading {
+    padding-top: 24px;
+}
+@media (max-width: 768px) {
+    .section-news .elementor-widget-heading {
+        padding-top: 16px;
+    }
+}
