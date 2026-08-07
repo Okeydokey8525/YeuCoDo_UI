@@ -10,6 +10,11 @@
   --yc-radius-sm: 4px;
   --yc-radius-md: 6px;
   --yc-shadow-card: 0 4px 12px rgba(0,0,0,0.08);
+  /* A13.1 Spacing / Vertical Rhythm */
+  --yc-section-gap: 64px;
+  --yc-section-gap-lg: 72px;
+  --yc-section-gap-related: 40px;
+  --yc-block-gap: 56px;
 }
 
 body, html {
@@ -868,7 +873,7 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 /* A12 — Homepage bento feature blocks */
 /* A12.1 layout */
 .yc-bento-section {
-    padding: 20px 20px 80px 20px;
+    padding: 20px 20px var(--yc-section-gap-lg) 20px;
     background-color: #ffffff;
     position: relative;
     z-index: 1;
@@ -883,8 +888,8 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
-    gap: 56px;
-    margin-bottom: 64px;
+    gap: var(--yc-block-gap);
+    margin-bottom: var(--yc-block-gap);
 }
 .yc-bento-block:last-child {
     margin-bottom: 0;
@@ -977,5 +982,89 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
     }
     .yc-bento-media img {
         aspect-ratio: 16 / 9;
+    }
+}
+
+/* =========================================
+   A13.1 — Vertical Rhythm Refinement
+   ========================================= */
+
+/* Reset margins to prevent double spacing */
+.about-homepage,
+.elementor-section.section-products,
+.elementor-section.section-gallery,
+.elementor-section.section-news,
+.elementor-section.section-partners {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Intro */
+.about-homepage {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+
+/* Cửa hàng */
+.elementor-section.section-products {
+    padding-top: 0 !important;
+    padding-bottom: var(--yc-section-gap) !important;
+}
+
+/* Gallery */
+.elementor-section.section-gallery {
+    padding-top: 0 !important;
+    padding-bottom: var(--yc-section-gap) !important;
+}
+
+/* News */
+.elementor-section.section-news {
+    padding-top: 0 !important;
+    padding-bottom: var(--yc-section-gap-lg) !important;
+}
+
+/* Partners */
+.elementor-section.section-partners {
+    padding-top: 0 !important;
+    padding-bottom: 56px !important;
+}
+
+/* Responsive spacing */
+@media (max-width: 1024px) {
+    :root {
+        --yc-section-gap: 52px;
+        --yc-section-gap-lg: 58px;
+        --yc-section-gap-related: 32px;
+        --yc-block-gap: 46px;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --yc-section-gap: 48px;
+        --yc-section-gap-lg: 48px;
+        --yc-section-gap-related: 28px;
+        --yc-block-gap: 40px;
+    }
+    .about-homepage {
+        padding-top: 36px !important;
+        padding-bottom: 36px !important;
+    }
+    .elementor-section.section-partners {
+        padding-bottom: 40px !important;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --yc-section-gap: 40px;
+        --yc-section-gap-lg: 40px;
+        --yc-section-gap-related: 24px;
+        --yc-block-gap: 32px;
+    }
+    .about-homepage {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+    }
+    .elementor-section.section-partners {
+        padding-bottom: 32px !important;
     }
 }
