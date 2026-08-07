@@ -1011,6 +1011,9 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 }
 
 /* Intro */
+.page-slider .bx-wrapper {
+    margin-bottom: 0 !important;
+}
 .about-homepage {
     padding-top: 28px !important;
     padding-bottom: 48px !important;
@@ -1084,12 +1087,16 @@ a.button:hover, button:hover, .button:hover, input[type="button"]:hover, input[t
 }
 
 /* =========================================
-   A13.2A — News heading vertical alignment
+   A13.2A — Section headings vertical alignment
    ========================================= */
+.section-products .elementor-widget-heading,
+.section-gallery .elementor-widget-heading,
 .section-news .elementor-widget-heading {
     padding-top: 24px;
 }
 @media (max-width: 768px) {
+    .section-products .elementor-widget-heading,
+    .section-gallery .elementor-widget-heading,
     .section-news .elementor-widget-heading {
         padding-top: 16px;
     }
